@@ -1,0 +1,21 @@
+{
+  "name": "webdev",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gvsdan/Webdev-test",
+  "authors": [
+    "Dan <udevelopd@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "font-awsome": "~4.4.0"
+  }
+}

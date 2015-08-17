@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+      <div class="col-lg-12 text-center">
+        <h1><i class="fa fa-search fa-3x"></i> </h1>
+        <div class="row">
+          <form action="" method="POST" role="form" action="/mexicoder/index/">
+            {% csrf_token %}
+            <div class="form-group">
+              
+              <input type="text" name="search" class="form-control" id="" placeholder="Type something...">
+            </div>
+
+          <button type="input" class="btn btn-success btn-block">Search..</button>
+          </form>
+        </div> <!-- /.row -->        
+      </div> <!-- /.col-lg-12 -->
+    </div>
+	<div class="col-lg-12 text-center">
+		<div class="col-md-6 result">
+			<i class="fa fa-twitter fa-3x"></i>
+			<div class="row">
+				{% for key in data %}
+            
+                {{ key.name }}
+                {{ key.blog }}
+                {{ key.public_repos }}
+                {{ key.pubic_gists }}
+                {{ key.email }}
+                {{ key.followers }}
+                {{ key.following }}
+
+        {% endfor %}
+			</div>
+		</div><!-- /.col-lg-6 -->
+		<div class="col-md-6 result">
+			<i class="fa fa-wikipedia-w fa-3x"></i>
+			<div class="row"></div>
+		</div><!-- /.col-lg-6 -->
+	</div>
+
+{% endblock content %}
