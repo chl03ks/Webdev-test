@@ -27,12 +27,12 @@
 		<div class="col-md-6 result">
 			<i class="fa fa-twitter fa-3x"></i>
 				{% for tweet in data %}
-          <div class="row">
+          <div class="row tweets">
             <div class="img_url">
               <img src="{{tweet.img_url}}" alt="">
             </div>
             <div class="username">
-              @ {{tweet.user}}
+              <h5>@{{tweet.user}}</h5>
             </div>
             <div class="tweet">
               {{tweet.tweet}}
@@ -44,12 +44,12 @@
 		<div class="col-md-6 result">
 			<i class="fa fa-wikipedia-w fa-3x"></i>
 			{% for wiki in wikidata %}
-          <div class="row">
+          <div class="row wikis">
             <div class="topic">
               {{wiki.topic}}
             </div>
             <div class="wiki">
-            <a href="https://en.wikipedia.org/wiki/{{wiki.topic}}">Link to the article</a>
+            <h4><a href="https://en.wikipedia.org/wiki/{{wiki.topic}}">Read the article</a></h4>
             </div>
           </div>
         
