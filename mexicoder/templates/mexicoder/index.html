@@ -1,6 +1,7 @@
 {% extends "base.html" %}-
 {% block content %}
 
+
 <div class="row">
       <div class="col-lg-12 text-center">
         <h1><i class="fa fa-search fa-3x"></i> </h1>
@@ -10,6 +11,11 @@
             <div class="form-group">
               
               <input type="text" name="search" class="form-control" id="" placeholder="Type something..." required>
+              <input type="checkbox" name="geo" class="geo" value="">
+              <input type="text" name="lag"  class="lag">
+              <input type="text" name="log" class="log">
+              <label class="text-left">Limit results those near me</label>
+            
             </div>
 
           <button type="input" class="btn btn-success btn-block">Search..</button>
@@ -40,12 +46,13 @@
 			{% for wiki in wikidata %}
           <div class="row">
             <div class="topic">
-              @ {{wiki.topic}}
+              {{wiki.topic}}
             </div>
             <div class="wiki">
+            <a href="https://en.wikipedia.org/wiki/{{wiki.topic}}">Link to the article</a>
             </div>
           </div>
-              
+        
         {% endfor %}
 		</div><!-- /.col-lg-6 -->
 	</div>
