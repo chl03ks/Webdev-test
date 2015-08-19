@@ -5,7 +5,6 @@ from twython import Twython
 
 
 import wikipedia
-import urllib
 
 ckey = 'MsT8KiSsk3R7OhotmRCNKKChk'
 csecret = 'Wwm9raPcX1FFPktOdsXNqssFCCMAccL3qRhEvqrIxMYMhYWkfh'
