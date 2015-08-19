@@ -24,6 +24,43 @@ body {
   /* Pad bottom by footer height */
   padding: 0 0 60px;
 }
+.tweets, .wikis
+{
+  width: 500px;
+  height: 200px;
+  border: 1px solid green;
+}
+.img_url 
+{
+  padding: 10px;
+}
+.img_url img 
+{
+
+  border-radius: 50%;
+  border: 2px solid green;
+
+}
+.tweet
+{
+  padding: 5px;
+}
+.topic
+{
+  padding: 30px;
+  height: 50%;
+}
+.username
+{
+  text-align: left !important;
+  margin-left: 10px;
+  vertical-align: top;
+  display: inline-block;
+}
+.tweet
+{
+
+}
 
 /* Set the fixed height of the footer here */
 #footer {
@@ -33,12 +70,12 @@ body {
 
 .row{
   margin: 15px;
-   border: 1px dotted black;
+  
  
 }
 .result
 {
-  border: 1px dotted black;
+
 }
 .log, .lag
 {
