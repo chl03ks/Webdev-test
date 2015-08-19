@@ -5,11 +5,11 @@
       <div class="col-lg-12 text-center">
         <h1><i class="fa fa-search fa-3x"></i> </h1>
         <div class="row">
-          <form action="" method="POST" role="form" action="/mexicoder/index/">
+          <form action="" method="GET" data-toggle="validator" role="form" action="/mexicoder/index/">
             {% csrf_token %}
             <div class="form-group">
               
-              <input type="text" name="search" class="form-control" id="" placeholder="Type something...">
+              <input type="text" name="search" class="form-control" id="" placeholder="Type something..." required>
             </div>
 
           <button type="input" class="btn btn-success btn-block">Search..</button>
@@ -26,7 +26,7 @@
               <img src="{{tweet.img_url}}" alt="">
             </div>
             <div class="username">
-              @{{tweet.user}}
+              @ {{tweet.user}}
             </div>
             <div class="tweet">
               {{tweet.tweet}}
@@ -37,7 +37,16 @@
 		</div><!-- /.col-lg-6 -->
 		<div class="col-md-6 result">
 			<i class="fa fa-wikipedia-w fa-3x"></i>
-			<div class="row"></div>
+			{% for wiki in wikidata %}
+          <div class="row">
+            <div class="topic">
+              @ {{wiki.topic}}
+            </div>
+            <div class="wiki">
+            </div>
+          </div>
+              
+        {% endfor %}
 		</div><!-- /.col-lg-6 -->
 	</div>
 
