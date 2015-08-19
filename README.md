@@ -1,7 +1,7 @@
 # Webdev-test
 a application that interacts with the Twitter and Wikipedia API
 
-## Instalation
+#Instalation
 
 #####Clone the repository
 ```sh
